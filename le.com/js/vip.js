@@ -111,9 +111,14 @@ $(".nav_nav1 ul li").each(function(i,v){
     leftjuli+=105;
 });
 
+var script=document.createElement("script");
+script.src="http://api.live.letv.com/v1/playbill/wholeday/1001/224?callback=cao";
+// script.src="http://ark.letv.com/s?vid=&n=0&ct=0&ark=1169&vvid=e6f6ab90-8d60-40f7-8c48-872e46ce4c95_1497582501234&t=1497582501&res=jsonp&j=LETV.Plugin.AD.resoJsonp&callback=cao&_=1497582499143"
+$("body").append(script);
 
-
-
+function cao(data){
+    console.log(data)
+}
 
 
 
